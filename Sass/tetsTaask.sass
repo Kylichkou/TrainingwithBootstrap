@@ -1,0 +1,17 @@
+// - вкладка, соседняя справа от активной (Отзывы покупателей);
+ul#product-sub-navigation-container li:span:nth-child(3)
+// - заголовок ("Цены на смартфон Apple iPhone 11 64GB (черный)")
+h1.catalog-masthead__title
+// - основная цена на товар, которая находится над строкой "Следить за суперценой на товар";
+
+.offers-description__price_primary
+// - первая цена на товар в списке продавцов (1670,00 р.)
+.offers-list__description_huge-alter, .offers-list__link_huge-alter
+
+    
+    // - вторая цена в списке продавцов
+.offers-list__item_highlighted .offers-list__description_huge-alter.offers-list__description_alter 
+    color: #cb4617
+// - последняя цена в списке продавцов
+.offers-list__description:last-child .offers-list__description_alter-other .offers-list__description_huge-alter .offers-list__description_font-weight_bold .offers-list__description_ellipsis .offers-list__description_nodecor
+// Если в задании нужно через псевдоклассы, то мы используем в первом случае :first-child, в последнем :last-child, а ко второму элементу nth:child(2)
